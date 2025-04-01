@@ -1,55 +1,121 @@
-/* Тут пиши основные стили */
 body {
-    text-align: left;
-    color:rgba(0,0,0,0.84);
-    margin-top: 55px;
-    margin-bottom: 95px;
+    padding-bottom: 100px;
 }
 
-h1, h2 {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    margin-left: 360px;
-    margin-right: 364px;
-    padding-bottom: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+nav {
+    padding-bottom: 50px;
+}
+
+.paragraph img {
+    width: 700px;
 }
 
 h1 {
+    font-family: Arial, serif;
     font-size: 42px;
-    line-height:44px;
+    line-height: 44px;
 }
 
 h2 {
+    font-family: Arial, monospace;
     font-size: 34px;
-    line-height:39px;
-}
-
-p {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-    margin-left: 362px;
-    margin-right: 362px;
-    font-size: 21px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 55px;
-    line-height:33px;
+    line-height: 39px;
 }
 
 code {
+    background-color: #f0f0f0;
+    padding: 3px;
+    border-radius: 5px;
     font-family: "Courier New", monospace;
-    background-color: #D3D3D3;
 }
 
-img {
-    margin-left: 362px;
-    margin-right: 362px;
-    padding-top: 43px;
-    padding-bottom: 37px;
+.paragraph {
+    margin: 0 0 0 362px;
+    text-align: left;
+    font-family: Georgia, monospace;
+    line-height: 33px;
+    font-size: 21px;
+    width: 700px;
 }
 
-@media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+nav img {
+    width: 97px;
+    padding-inline-start: 38px;
+    margin: 10px auto 10px 38px;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    background-color: #faf9f8;
+    border-bottom: 1px #000000 solid;
+    border-top: 1px #000000 solid;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    cursor: url("responsive-design/2744EFD6-B878-4DCB-B0D5-526F1B233733/9E1721B2-E123-44D1-BBA7-88E713A6A184@1x.png"),
+    auto;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 24px;
+    color: #333333;
+    text-align: left;
+    line-height: 36px;
+    margin-left: 30px;
+    display: inline;
+}
+
+header li:hover {
+    text-decoration: underline;
+}
+
+.red {
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    nav img {
+        margin: 10px auto 10px 20px;
+        padding-inline-start: 20px;
+        width: 101px;
+        height: 64px;
+    }
+    header li {
+        line-height:25px;
+        font-size:20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        display: list-item;
+    }
+
+    header ul {
+        margin: 0 auto 10px 0;
+        padding-inline-start: 20px;
+    }
+
+    .paragraph {
+        margin: 0 0 0 20px;
+        padding-inline-start: 20px;
+        text-align: left;
+        font-family: Georgia, monospace;
+        line-height:22px;
+        font-size: 18px;
+        width: 95%;
+    }
+    .paragraph img {
+        width: 95%;
+    }
+    h1 {
+        font-family: Arial, serif;
+        font-size: 26px;
+        line-height:28px;
+    }
+    h2 {
+        font-family: Arial, monospace;
+        font-size: 22px;
+        line-height: 39px;
+    }
 }
